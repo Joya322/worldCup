@@ -60,7 +60,8 @@ a{
   background-color: #dd0000;
   border-radius: 5px;
   transition: transform 0.5s, background-color 0.5s;
-  /* animation: animB 2s linear 3; */
+  animation: animB 1s ease-in-out 5;
+  animation-play-state: running;
     
 }
 .bannerDetails a:hover{
@@ -71,16 +72,22 @@ a{
   margin-left: 10px;
 }
 .bannerDetails i{
-    position: relative;
-    animation: animB 1s ease-in-out 3;
-    animation-play-state: running;
-    transition: transform .5s;
+  position: relative;
+  animation: animI 1s ease-in-out 5;
+  animation-play-state: running;
+  transition: transform 0.5s;
 }
 @keyframes animB{
-    to{
-        transform: scale(1.5);
-        right: -15px;
-    }
+  to{
+    box-shadow: 5px 5px 5px rgb(241, 186, 186);
+  }
+}
+@keyframes animI {
+  to {
+    transform: scale(1.5);
+    right: -15px;
+  }
+  
 }
 .bannerImg {
   width: 581px;
@@ -197,6 +204,42 @@ aside nav {
   height: 24px;
   margin-right: 10px;
 }
+
+/* upcoming match page style start  */
+
+.blogChild {
+  margin: 52px 30px;
+}
+.blogFlag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.blogFlag img {
+  width: 93px;
+}
+.blogFlag span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #161616;
+}
+.blogInfo{
+  text-align: center;
+}
+.blogInfo h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: #161616;
+  margin-bottom: 10px;
+}
+.blogInfo p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #4D4D4D;
+}
+/* upcoming match page style end  */
+
 .viewAll{
     margin-top: 50px;
     text-align: center;
