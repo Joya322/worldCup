@@ -43,6 +43,7 @@ a {
 .bannerTitle {
   font-size: 70px;
   font-weight: 700;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 
@@ -300,8 +301,10 @@ hr {
     justify-content: center;
     align-items: center;
   }
+ 
   .bannerDetails {
     text-align: center;
+    margin-right: 45px;
   }
   .bannerTitle {
     font-size: 35px;
@@ -403,6 +406,7 @@ hr {
   }
   .bannerDetails {
     text-align: center;
+    margin-right: 45px;
   }
   .bannerTitle {
     font-size: 40px;
