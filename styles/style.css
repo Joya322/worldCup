@@ -101,13 +101,11 @@ main style start
 .blogSection {
   display: grid;
   grid-template-columns: 312px 1fr;
-  gap: 24px;
+  gap: 30px;
 }
 
 /* aside style start  */
 aside nav {
-  /* width: 252px; */
-  /* height: 252px; */
   padding: 30px;
   background-color: #161616;
   border-radius: 10px;
@@ -118,14 +116,9 @@ aside nav {
   flex-direction: column;
   gap: 30px;
   text-align: center;
-  /* width: 252px; */
-  /* 
-    height: 252px; */
 }
 
 .navItem {
-  /* width: 252px;
-    height: 64px; */
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -137,7 +130,7 @@ aside nav {
   padding: 17px 39px;
 }
 
-.navItem.visitedPage{
+.navItem.visitedPage {
   background-color: #dd0000;
 }
 .visitedPage a {
@@ -155,7 +148,6 @@ aside nav {
 
 .blog {
   width: 312px;
-  /* height: 362px; */
   border: 1px solid #e8e8e8;
   border-radius: 10px;
 }
@@ -265,8 +257,6 @@ footer {
   text-align: center;
 }
 .footerTitle {
-  /* border: 1px solid red; */
-  /* margin-top: 130px; */
   padding-top: 130px;
   padding-bottom: 50px;
 }
@@ -301,7 +291,9 @@ hr {
 }
 /* footer style end  */
 
-/* responsive design  */
+/*--------- responsive design  ---------*/
+/* for extra small device(mobile) ---------------------------------------*/
+
 @media screen and (max-width: 576px) {
   .banner {
     flex-direction: column;
@@ -315,7 +307,6 @@ hr {
     font-size: 35px;
     margin-top: 28px;
     margin-bottom: 8px;
-    /* border: 1px solid green; */
   }
   .bannerDesc {
     text-align: center;
@@ -327,20 +318,15 @@ hr {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    /* border: 1px solid red; */
   }
   .bannerDetails a {
     padding: 10px 20px;
     margin-bottom: 30px;
-    /* border: 1px solid yellow;  */
   }
   .bannerImg {
     width: 100%;
     height: 100%;
     margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    /* border: 1px solid yellow;  */
   }
   /* header end  */
 
@@ -350,74 +336,177 @@ hr {
     justify-content: center;
   }
   aside nav {
-    /* width: 252px; */
-    /* height: 252px; */
-    /* padding: 30px; */
     background-color: #ffffff;
     border-radius: 10px;
   }
-   .blogSection .navItems {
+  .blogSection .navItems {
     gap: 16px;
     text-align: center;
     margin: auto;
-    /* width: 252px; */
-    /* 
-    height: 252px; */
   }
   .blogSection .navItem {
-  /* width: 252px;
-    height: 64px; */
-    /* display: inline; */
-  border-radius: 10px;
-   
-}
-.navItem a {
-  padding: 9px 35px;
-  margin: 0px;
-  border: 1px solid #E8E8E8;
-  border-radius: 10px;
-}
-.navItem.visitedPage{
-  background-color: #ffffff;
-}
-.navItem.visitedPage a{
-  background-color: #dd0000;
-  padding: 9px 60px;
-  border: none;
-}
+    border-radius: 10px;
+  }
+  .navItem a {
+    padding: 9px 35px;
+    margin: 0px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+  }
+  .navItem.visitedPage {
+    background-color: #ffffff;
+  }
+  .navItem.visitedPage a {
+    background-color: #dd0000;
+    padding: 9px 30px;
+    border: none;
+  }
   .blogs {
-    display: grid;
     grid-template-columns: 1fr;
-    row-gap: 24px;
-    column-gap: 24px;
+    gap: 16px;
   }
   .footerTitle {
-  /* border: 1px solid red; */
-  /* margin-top: 130px; */
-  padding-top: 24px;
-  padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .footerTitle h2 {
+    font-size: 22px;
+  }
+  hr {
+    width: 335px;
+  }
+  .footerNav ul {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footerNav ul li a {
+    font-size: 14px;
+  }
+  .socialMedia {
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+  .socialMedia a {
+    color: #b9b9b9;
+    font-size: 22px;
+    margin: 0px 15px;
+  }
 }
- .footerTitle h2 {
-  font-size: 22px;
+
+/* for small device(mobile)  ---------------------------------------*/
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bannerDetails {
+    text-align: center;
+  }
+  .bannerTitle {
+    font-size: 40px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+  .bannerDesc {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .bannerDetails a {
+    padding: 12px 22px;
+    margin-bottom: 30px;
+  }
+  .bannerImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+  /* header end  */
+
+  .blogSection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  aside nav {
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  .blogSection .navItems {
+    gap: 16px;
+  }
+  .navItem a {
+    padding: 9px 15px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+  }
+  .navItem.visitedPage {
+    background-color: #ffffff;
+  }
+  .navItem.visitedPage a {
+    background-color: #dd0000;
+    padding: 9px 30px;
+    border: none;
+  }
+  .blogs {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+  .blog {
+    width: 80%;
+  }
+  .blogImage {
+    width: 100%;
+    height: auto;
+  }
+  .blogDetails {
+    padding: 45px;
+  }
+  .blogDetails a {
+    font-size: 18px;
+  }
+  .blogTitle {
+    font-size: 22px;
+  }
+  .blogFlag img {
+  width: 45%;
 }
-hr {
-  width: 335px;
+.blogFlag span {
+  font-size: 18px;
 }
-.footerNav ul {
-  flex-direction: column;
-  gap: 30px;
-}
-.footerNav ul li a {
-  font-size: 14px;
-}
-.socialMedia {
-  margin-top: 30px;
-  padding-bottom: 20px;
-  /* margin-bottom: ; */
-}
-.socialMedia a {
-  color: #b9b9b9;
-  font-size: 22px;
-  margin: 0px 15px;
-}
+  .footerTitle {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .footerTitle h2 {
+    font-size: 22px;
+  }
+  hr {
+    width: 335px;
+  }
+  .footerNav ul {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footerNav ul li a {
+    font-size: 14px;
+  }
+  .socialMedia {
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+  .socialMedia a {
+    color: #b9b9b9;
+    font-size: 22px;
+    margin: 0px 15px;
+  }
 }
