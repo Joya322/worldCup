@@ -654,21 +654,22 @@ hr {
   .navItems {
     flex-direction: row;
     justify-content: space-between;
+    /* gap: 85px; */
   }
 
   .navItem {
-    width: 250px;
+    width: 230px;
     border: 1px solid #E8E8E8;
   }
 
   .navItem a {
-    padding: 17px 28px;
+    padding: 17px 10px;
   }
 
   .blogs {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
-    column-gap: 20px;
+    column-gap: 30px;
   }
   .blog {
     width: 90%;
@@ -679,7 +680,7 @@ hr {
     border-radius: 10px 10px 0px 0px;
   }
   .blogFlag img {
-    width: 45%;
+    width: 50%;
   }
 
   .blogFlag span {
@@ -709,7 +710,5 @@ hr {
     gap: 20px;
     
   }
-  .footerNav ul li{
-    
-  }
+
 }
